@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpg" href="path-to-your-favicon"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
+    <title>Resume - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Additional CSS specific to the resume page */
+        nav {
+            display: none; /* Hide the navigation bar on the resume page */
+        }
+        .section {
+            padding: 50px 20px;
+            background-color: white;
+        }
+        .resume-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(270deg, #1c99fe, #7644ff, #fd4766);
+            background-size: 600% 600%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientText 5s ease-in-out infinite;
+        }
+        .resume-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .back-home-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #fd4766;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+        }
+        .back-home-btn:hover {
+            background: #ff97d2;
+            color: #2e1827;
+            transform: scale(1.05);
+        }
+        .download-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="section">
+        <a href="index.html" class="back-home-btn">Back to Home</a>
+        <h2 class="resume-title">My Resume</h2>
+        <div class="resume-container">
+            <iframe src="_Resume (2).pdf" width="80%" height="500px"></iframe>
+        </div>
+    </div>
+    <div class="download-section">
+        <a href="_Resume (2).pdf" download="Sharath_Jogi_Resume.pdf" class="download-btn">
+            Download Resume
+        </a>
+    </div>
+</body>
+</html>
